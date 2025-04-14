@@ -1,8 +1,9 @@
 body {
-    margin: 0;
+    margin:0 auto;
     font-family: sans-serif;
     display: flex;
-    background-color: rgba(221, 173, 39, 0.788); 
+    background-color: rgba(221, 173, 39, 0.788);
+    text-align: center;
 }
 .mage-bio {
     display: flex;
@@ -19,6 +20,11 @@ body {
     min-height: 100vh; 
 }
 
+.centralizada iframe {
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
 header {
     background-color: #a00000;
     color: rgb(0, 0, 0);

@@ -23,12 +23,36 @@
                 </ul>
             </nav>
         </header>
-        <main class="content">
-            <h1>Entre em Contato</h1>
-            <p>Envie sua mensagem ou reclamação abaixo:</p>
-            <iframe src="https://forms.gle/zCoHPzc3B6GP5Hg2A" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-
-            <p>Ou entre em contato por e-mail: <a href="joaomasantos09@gmail.com">joaomasantos09@gamil.com</a></p>
+            <main class="content">
+                <h1>Entre em Contato</h1>
+                <p>Envie sua mensagem ou reclamação abaixo:</p>
+            
+                <div class="contact-form">
+                    <h2>Enviar Mensagem Direta</h2>
+                    <form id="directContactForm">
+                        <div>
+                            <label for="nome">Nome:</label><br>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div>
+                            <label for="email">Seu E-mail (Opcional):</label><br>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="mensagem">Sua Mensagem:</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="5" cols="50" required></textarea>
+                        </div>
+                        <button type="button" onclick="enviarEmailDireto()">Enviar Mensagem</button>
+                        <div id="mensagem-enviada-direta" style="display:none; color: green;">Mensagem enviada com sucesso!</div>
+                        <div id="erro-envio-direta" style="display:none; color: red;">Ocorreu um erro ao enviar a mensagem.</div>
+                    </form>
+                </div>
+                <h1>Caso de erro, tente abaixo</h1>
+            
+                <iframe src="https://forms.gle/zCoHPzc3B6GP5Hg2A" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            
+                <p>Ou entre em contato por e-mail: <a href="mailto:joaomasantos09@gmail.com">joaomasantos09@gmail.com</a></p>
+            </main>
         </main>
     </div>
     <script src="js/script.js"></script>

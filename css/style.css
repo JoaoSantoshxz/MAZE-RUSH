@@ -19,14 +19,28 @@ body {
     width: 100%;
     min-height: 100vh; 
 }
+.content3 {
+    flex-grow: 1;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
+}
 .centralizada iframe {
     display: block;
     margin:0 auto;
     text-align: center;
-}
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 5px solid rgb(160, 0, 0);
+    border-radius: 10px;
+    
+    }
 header {
-    background-color: #a00000;
+    background-color: rgb(160, 0, 0);
     color: rgb(0, 0, 0);
     padding: 2em;
     width: 150px;
@@ -111,6 +125,34 @@ header {
 }
 
 .mage-info {
+    display: flex;
+    align-items: center; 
+    margin-right: 20px;
+}
+.content2 {
+    flex-grow: 1;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.mage-bio2 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+    border-radius: 15px; 
+    background-color: #ffffff;
+    padding: 15px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+}
+
+.mage-info2 {
     display: flex;
     align-items: center; 
     margin-right: 20px;
